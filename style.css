@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e4f4ff, #fff0f7);
+    color: #526d85;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffffd9;
+    backdrop-filter: blur(12px);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #75a9d1;
+}
+
+.logo span {
+    color: #e9a9c8;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6686a1;
+    font-size: 11px;
+}
+
+nav a:hover {
+    color: #e69abd;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 130px 8% 70px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.home-content {
+    text-align: center;
+    animation: muncul 1.5s ease;
+}
+
+.label {
+    color: #d88db3;
+    letter-spacing: 2px;
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+
+.home h1 {
+    font-size: 42px;
+    color: #6f9fc5;
+}
+
+.home h1 span {
+    font-family: 'Great Vibes', cursive;
+    color: #e49abb;
+    font-size: 58px;
+}
+
+.home h2 {
+    color: #d78eb2;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.deskripsi {
+    font-size: 13px;
+    line-height: 2;
+    margin: 20px 0;
+}
+
+.ikon {
+    font-size: 23px;
+    margin: 20px;
+}
+
+.ikon span {
+    display: inline-block;
+    animation: goyang 2s infinite alternate;
+}
+
+.tombol {
+    display: inline-block;
+    background: linear-gradient(90deg, #9bcdf0, #edb3d0);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 13px 25px;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px #b4cde2;
+    transition: .3s;
+}
+
+.tombol:hover {
+    transform: translateY(-5px);
+}
+
+.bingkai {
+    width: 260px;
+    padding: 12px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px #9cbdd555;
+    animation: melayang 4s infinite ease-in-out;
+}
+
+.bingkai img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.bingkai p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 24px;
+    color: #d88db3;
+    padding: 10px;
+}
+
+.footer-home {
+    position: absolute;
+    bottom: 20px;
+    font-size: 12px;
+    color: #a1b7c9;
+}
+
+.dekorasi {
+    position: absolute;
+    animation: kelap 2s infinite alternate;
+}
+
+.bintang1 {
+    top: 20%;
+    left: 10%;
+    color: #e5a5c7;
+    font-size: 30px;
+}
+
+.bintang2 {
+    top: 70%;
+    right: 10%;
+    color: #84bce6;
+    font-size: 35px;
+}
+
+.kupu {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    font-size: 30px;
+    animation: terbang 7s infinite alternate;
+}
+
+.bagian {
+    min-height: 80vh;
+    padding: 110px 8% 80px;
+    text-align: center;
+}
+
+.judul {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    color: #d98fb5;
+    margin-bottom: 35px;
+}
+
+.kartu {
+    max-width: 550px;
+    margin: auto;
+    padding: 35px;
+    background: #ffffffd9;
+    border: 1px solid white;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px #9bbbd533;
+    line-height: 2;
+}
+
+.kartu h2 {
+    color: #79a9d0;
+    margin-bottom: 15px;
+}
+
+.ikon-besar {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.kutipan {
+    color: #d88eb3;
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.grid-kenangan {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.kartu-kenangan {
+    width: 210px;
+    background: #ffffffd9;
+    padding: 25px 15px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px #a6c5dc44;
+    transition: .4s;
+}
+
+.kartu-kenangan:hover {
+    transform: translateY(-10px);
+}
+
+.kartu-kenangan span {
+    font-size: 35px;
+}
+
+.kartu-kenangan h3 {
+    color: #78a7cb;
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+.kartu-kenangan p {
+    font-size: 12px;
+}
+
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 220px));
+    justify-content: center;
+    gap: 18px;
+}
+
+.galeri img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    padding: 7px;
+    background: white;
+    border-radius: 17px;
+    box-shadow: 0 8px 20px #9dbbd544;
+    transition: .4s;
+}
+
+.galeri img:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+.surat {
+    max-width: 500px;
+}
+
+#isiSurat {
+    display: none;
+    text-align: left;
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff3f8;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+#isiSurat.tampil {
+    display: block;
+    animation: muncul 1s ease;
+}
+
+.footer {
+    margin-top: 70px;
+    color: #d88db3;
+    font-family: 'Great Vibes', cursive;
+    font-size: 27px;
+}
+
+.hati {
+    position: fixed;
+    bottom: -30px;
+    color: #e9a6c8;
+    font-size: 22px;
+    pointer-events: none;
+    z-index: 999;
+    animation: naik 7s linear forwards;
+}
+
+.bintang {
+    position: fixed;
+    color: white;
+    pointer-events: none;
+    z-index: 998;
+    animation: kelap 2s infinite alternate;
+}
+
+.kupu-terbang {
+    position: fixed;
+    pointer-events: none;
+    z-index: 997;
+    animation: gerak 8s ease-in-out forwards;
+}
+
+@keyframes naik {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes kelap {
+    from {
+        opacity: .2;
+        transform: scale(.7);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.3);
+    }
+}
+
+@keyframes melayang {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes goyang {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes terbang {
+    from {
+        transform: translate(0, 0) rotate(-15deg);
+    }
+    to {
+        transform: translate(-45px, 70px) rotate(15deg);
+    }
+}
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gerak {
+    0% {
+        transform: translate(0, 0) rotate(-10deg);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(60px, -100px) rotate(15deg);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    header {
+        padding: 13px 4%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .home {
+        gap: 35px;
+        padding-top: 140px;
+    }
+
+    .home h1 {
+        font-size: 34px;
+    }
+
+    .home h1 span {
+        font-size: 45px;
+    }
+
+    .bingkai {
+        width: 230px;
+    }
+
+    .bingkai img {
+        height: 260px;
+    }
+
+    .judul {
+        font-size: 40px;
+    }
+}
